@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kitback support</title>
+<link rel="icon" href="icon.png">
+<link rel="apple-touch-icon" href="icon.png">
+<style>
+@font-face { font-family: 'Frank Ruhl Libre'; src: url('fonts/FrankRuhlLibre-VF.ttf') format('truetype'); font-weight: 300 900; font-display: swap; }
+@font-face { font-family: 'Assistant'; src: url('fonts/Assistant-VF.ttf') format('truetype'); font-weight: 200 800; font-display: swap; }
+:root { --bg: #F6F3EE; --surface: #FFFFFF; --text: #1B1A18; --muted: #6B675F; --accent: #213F65; --line: #E4DED3; color-scheme: light dark; }
+@media (prefers-color-scheme: dark) {
+  :root { --bg: #0A0A0B; --surface: #161618; --text: #F1ECE4; --muted: #9A9388; --accent: #C4A574; --line: #2A2A2D; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text); font: 17px/1.65 'Assistant', system-ui, sans-serif; -webkit-font-smoothing: antialiased; }
+main { max-width: 640px; margin: 0 auto; padding: 56px 24px 64px; }
+header { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 40px; }
+.brand { display: flex; align-items: center; gap: 14px; color: var(--text); text-decoration: none; font-weight: 600; letter-spacing: .04em; }
+.brand img { width: 44px; height: 44px; border-radius: 10px; }
+.lang { color: var(--accent); text-decoration: none; font-weight: 600; }
+h1 { font: 400 clamp(32px, 6vw, 42px)/1.2 'Frank Ruhl Libre', Georgia, serif; margin: 0 0 20px; }
+h2 { font: 400 24px/1.3 'Frank Ruhl Libre', Georgia, serif; margin: 40px 0 12px; }
+p, li { color: var(--text); }
+a { color: var(--accent); }
+strong { font-weight: 600; }
+ul { padding-inline-start: 22px; }
+footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: 15px; }
+</style>
+</head>
+<body>
+<main>
+<header>
+  <a class="brand" href="./"><img src="icon.png" alt=""><span>Kitback</span></a>
+  <a class="lang" href="he/index.html" hreflang="he">עברית</a>
+</header>
+<h1>Kitback support</h1>
+<p>Kitback tracks production gear: scan everything on the way out and on the way back, and the app tells you what didn't come home. Everything stays on your phone.</p>
+<h2>Contact</h2>
+<p>A question, a problem or an idea: write to <a href="mailto:mosseri.studio@gmail.com">mosseri.studio@gmail.com</a>. We read every message, and answer in English or Hebrew.</p>
+<h2>Common questions</h2>
+<p><strong>How do I get started?</strong><br>Add your gear in Inventory, print labels and stick them on. Before a shoot, tap <strong>Head out</strong> on Home and scan everything on the way out. At the end, tap <strong>Scan back in</strong> and scan what came back. The report is ready as soon as you finish.</p>
+<p><strong>How do I print labels?</strong><br>In Inventory, tap the QR icon. Pick the items and a size – case (50×30 mm) or cable (30×18 mm) – and tap <strong>Create PDF</strong>. Print it on a home printer at 100% scale.</p>
+<p><strong>Can I scan without the camera?</strong><br>Yes. On the scan screen, tap <strong>Enter code by hand</strong> and type the code printed under the QR. Upper or lower case doesn't matter.</p>
+<p><strong>What does "Closed by its case" mean?</strong><br>Scanning a case closes everything registered inside it, so you don't have to scan each lens. The report lists those items separately, so you know what you relied on. Anything marked <strong>Always scan individually</strong> is never closed this way.</p>
+<p><strong>An item shows as missing, but I have it.</strong><br>Open the trip in Trips, tap <strong>Resolve</strong> next to the item and choose <strong>Found it</strong>. An open gap stays on Home until it's closed, even after the trip ends.</p>
+<p><strong>Can my producer see a trip?</strong><br>Open the trip's report and tap the share icon (<strong>Export summary</strong>), then send the file. On their phone it opens from Trips → <strong>Open a received summary</strong>. It's read-only: nothing on their phone changes.</p>
+<p><strong>Where is my data kept?</strong><br>Only on your device, and normally in your phone's own backup (iCloud or Google). We don't see it. See the <a href="privacy.html">privacy policy</a>.</p>
+<p><strong>I got a new phone. How do I move my gear?</strong><br>On the old phone: Settings → <strong>Export full backup</strong>, and save the file. On the new phone: Settings → <strong>Restore from a file</strong>. Restoring replaces whatever is already on the new phone.</p>
+<p><strong>How do I delete everything?</strong><br>Settings → <strong>Delete all data</strong>. The app shows what will be removed and offers a backup first.</p>
+<h2>Privacy and terms</h2>
+<p><a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms of use</a></p>
+<footer>Kitback · <a href="mailto:mosseri.studio@gmail.com">mosseri.studio@gmail.com</a></footer>
+</main>
+</body>
+</html>
